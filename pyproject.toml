@@ -1,0 +1,37 @@
+[project]
+name = "canreuse"
+version = "0.1.0"
+description = "Can I reuse this? A deterministic check for whether material under one license may be incorporated into a project under another."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+keywords = ["license", "spdx", "compliance", "open-source", "compatibility", "reuse"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0", "ruff", "mypy"]
+
+[project.scripts]
+canreuse = "canreuse.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/canreuse"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "N", "UP", "B", "SIM", "RUF"]
+ignore = ["E501"]
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+files = ["src/canreuse"]
