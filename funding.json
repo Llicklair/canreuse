@@ -1,0 +1,72 @@
+{
+  "$schema": "https://fundingjson.org/schema/v1.1.0.json",
+  "entity": {
+    "type": "individual",
+    "role": "maintainer",
+    "name": "Marcos Recio",
+    "email": "marcosreciosanchez@gmail.com",
+    "description": "Independent software developer in Spain. I build deterministic developer tooling: license-compatibility checking (canreuse) and a diagnostic harness for codebases (galaxy-brain). Development is openly AI-assisted under my direction and review, and every rule or claim ships with tests and cited sources.",
+    "webpageUrl": {
+      "url": "https://github.com/Llicklair"
+    }
+  },
+  "projects": [
+    {
+      "guid": "canreuse",
+      "name": "canreuse",
+      "description": "Can I reuse this? A deterministic, directional license-compatibility check: given material under license A and a project under license B, it answers allowed / allowed-with-obligations / review / disallowed / unknown, with machine-readable output and exit codes, and it fails safe — contested or unrecognised cases never produce a green light. Built for the moment of reuse (CI, pre-commit, AI coding agents), not for after-the-fact inventory.",
+      "webpageUrl": {
+        "url": "https://github.com/Llicklair/canreuse"
+      },
+      "repositoryUrl": {
+        "url": "https://github.com/Llicklair/canreuse"
+      },
+      "licenses": ["spdx:MIT"],
+      "tags": ["licensing", "compliance", "supply-chain", "spdx", "developer-tools"]
+    },
+    {
+      "guid": "galaxy-brain",
+      "name": "galaxy-brain",
+      "description": "The deterministic harness a coding agent should be standing on: code shape, call graph, diff impact and crash state in milliseconds, offline, with no model in the loop. One CLI, 17 languages, zero runtime dependencies.",
+      "webpageUrl": {
+        "url": "https://github.com/Llicklair/galaxy-brain"
+      },
+      "repositoryUrl": {
+        "url": "https://github.com/Llicklair/galaxy-brain"
+      },
+      "licenses": ["spdx:Apache-2.0"],
+      "tags": ["developer-tools", "static-analysis", "code-quality", "ai-agents"]
+    }
+  ],
+  "funding": {
+    "channels": [
+      {
+        "guid": "bank",
+        "type": "bank",
+        "description": "SEPA bank transfer (Spain). Contact by email for details."
+      }
+    ],
+    "plans": [
+      {
+        "guid": "one-time",
+        "status": "active",
+        "name": "One-time contribution",
+        "amount": 0,
+        "currency": "EUR",
+        "frequency": "one-time",
+        "channels": ["bank"],
+        "description": "Any amount supports maintenance of canreuse and galaxy-brain: sourced compatibility rules, tests, releases and documentation."
+      },
+      {
+        "guid": "milestone-canreuse",
+        "status": "active",
+        "name": "canreuse development milestones",
+        "amount": 2400,
+        "currency": "EUR",
+        "frequency": "other",
+        "channels": ["bank"],
+        "description": "Funds one verifiable milestone of the canreuse roadmap (SPDX expressions, sourced ruleset, manifest/tree scanning, CI integration). Detailed plan in the repository."
+      }
+    ]
+  }
+}

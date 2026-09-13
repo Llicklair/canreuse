@@ -51,7 +51,8 @@ answer says so.
 ## Install
 
 ```bash
-pip install canreuse
+# not yet on PyPI; install from the repository:
+pip install git+https://github.com/Llicklair/canreuse
 ```
 
 ## Licence
