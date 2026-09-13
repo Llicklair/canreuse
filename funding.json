@@ -1,5 +1,5 @@
 {
-  "$schema": "https://fundingjson.org/schema/v1.1.0.json",
+  "version": "v1.0.0",
   "entity": {
     "type": "individual",
     "role": "maintainer",
@@ -21,8 +21,16 @@
       "repositoryUrl": {
         "url": "https://github.com/Llicklair/canreuse"
       },
-      "licenses": ["spdx:MIT"],
-      "tags": ["licensing", "compliance", "supply-chain", "spdx", "developer-tools"]
+      "licenses": [
+        "spdx:MIT"
+      ],
+      "tags": [
+        "licensing",
+        "compliance",
+        "supply-chain",
+        "spdx",
+        "developer-tools"
+      ]
     },
     {
       "guid": "galaxy-brain",
@@ -34,8 +42,15 @@
       "repositoryUrl": {
         "url": "https://github.com/Llicklair/galaxy-brain"
       },
-      "licenses": ["spdx:Apache-2.0"],
-      "tags": ["developer-tools", "static-analysis", "code-quality", "ai-agents"]
+      "licenses": [
+        "spdx:Apache-2.0"
+      ],
+      "tags": [
+        "developer-tools",
+        "static-analysis",
+        "code-quality",
+        "ai-agents"
+      ]
     }
   ],
   "funding": {
@@ -54,7 +69,9 @@
         "amount": 0,
         "currency": "EUR",
         "frequency": "one-time",
-        "channels": ["bank"],
+        "channels": [
+          "bank"
+        ],
         "description": "Any amount supports maintenance of canreuse and galaxy-brain: sourced compatibility rules, tests, releases and documentation."
       },
       {
@@ -64,7 +81,9 @@
         "amount": 2400,
         "currency": "EUR",
         "frequency": "other",
-        "channels": ["bank"],
+        "channels": [
+          "bank"
+        ],
         "description": "Funds one verifiable milestone of the canreuse roadmap (SPDX expressions, sourced ruleset, manifest/tree scanning, CI integration). Detailed plan in the repository."
       }
     ]
